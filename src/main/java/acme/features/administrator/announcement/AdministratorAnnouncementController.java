@@ -22,10 +22,14 @@ public class AdministratorAnnouncementController extends AbstractController<Admi
 	@Autowired
 	private AdministratorAnnouncementShowService	showService;
 
+	@Autowired
+	private AdministratorAnnouncementCreateService	createService;
+
 
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 }
