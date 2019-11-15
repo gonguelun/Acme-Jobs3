@@ -8,10 +8,12 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.configuration.list.label.spamWords=Spam Words
-administrator.configuration.list.label.spamThreshold=Spam Threshold
+administrator.non-commercial-banner.list.label.pictureUrl = Picture url
+administrator.non-commercial-banner.list.label.jingle = Jingle
 
-administrator.configuration.form.label.spamWords=Spam Words
-administrator.configuration.form.label.spamThreshold=Spam Threshold
-administrator.configuration.form.button.update=Update
-administrator.configuration.form.button.return=Return
+administrator.non-commercial-banner.form.label.pictureUrl = Picture url
+administrator.non-commercial-banner.form.label.slogan = Slogan
+administrator.non-commercial-banner.form.label.targetUrl = Traget url
+administrator.non-commercial-banner.form.label.jingle = "Jingle"
+
+administrator.non-commercial-banner.form.button.return = Return

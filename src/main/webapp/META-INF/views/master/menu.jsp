@@ -37,7 +37,13 @@
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.announcements" action="/administrator/announcement/list"/>
-			<acme:menu-suboption code="master.menu.administrator.announcements.create" action="/administrator/announcement/create"/>
+      <acme:menu-suboption code="master.menu.administrator.announcements.create" action="/administrator/announcement/create"/>
+			<acme:menu-suboption code="master.menu.administrator.investor-record" action="/administrator/investor-record/list"/>
+			<acme:menu-suboption code="master.menu.administrator.company-record" action="/administrator/company-record/list"/>
+			<acme:menu-suboption code="master.menu.administrator.company-record.create" action="/administrator/company-record/create"/>
+      <acme:menu-suboption code="master.menu.administrator.commercial-banner" action="/administrator/commercial-banner/list"/>
+			<acme:menu-suboption code="master.menu.administrator.non-commercial-banner" action="/administrator/non-commercial-banner/list"/>
+			<acme:menu-suboption code="master.menu.administrator.commercial-banner.create" action="/administrator/commercial-banner/create"/>
 			<acme:menu-suboption code="master.menu.administrator.configuration" action="/administrator/configuration/list"/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>

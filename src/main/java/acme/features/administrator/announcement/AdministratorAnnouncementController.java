@@ -1,4 +1,3 @@
-
 package acme.features.administrator.announcement;
 
 import javax.annotation.PostConstruct;
@@ -23,6 +22,12 @@ public class AdministratorAnnouncementController extends AbstractController<Admi
 	private AdministratorAnnouncementShowService	showService;
 
 	@Autowired
+	private AdministratorAnnouncementDeleteService	deleteService;
+  
+  @Autowired
+	private AdministratorAnnouncementUpdateService	updateService;
+  
+  @Autowired
 	private AdministratorAnnouncementCreateService	createService;
 
 
@@ -30,6 +35,8 @@ public class AdministratorAnnouncementController extends AbstractController<Admi
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
-		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+    super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 }
