@@ -25,6 +25,10 @@
 		code="administrator.investor-record.form.button.delete"
 		action="/administrator/investor-record/delete"/>
 
+	<acme:form-submit test="${command == 'create'}"
+		code="administrator.investor-record.form.button.create"
+		action="/administrator/investor-record/create"/>
+
 	<acme:form-submit test="${command == 'delete'}"
 		code="administrator.investor-record.form.button.delete"
 		action="/administrator/investor-record/delete"/>
