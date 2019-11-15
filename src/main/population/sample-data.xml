@@ -20,7 +20,7 @@
 
 	<bean id="announcement02" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample Announcement 02" />
-		<property name="moment" value="2019/10/10 15:30" />
+		<property name="moment" value="2019/10/25 15:30" />
 		<property name="moreInfo" value="http://www.google.es" />
 		<property name="text" value="Description of announcement 2" />
 	</bean>
