@@ -15,4 +15,7 @@ public interface AdministratorConfigurationRepository extends AbstractRepository
 	@Query("select s from Configuration s")
 	Collection<Configuration> findManyAll();
 
+	@Query("select s from Configuration s where s.id=?1")
+	Configuration findOneById(int id);
+
 }
