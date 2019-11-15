@@ -26,9 +26,15 @@
 	<acme:form-url code="administrator.announcement.form.label.moreInfo" path="moreInfo"/>
 	<acme:form-textarea code="administrator.announcement.form.label.text" path="text"/>
 	
-	<acme:form-submit test="${command == 'show' }"
+  <acme:form-submit test="${command == 'show' }"
 		code="administrator.announcement.form.button.update"
 		action="/administrator/announcement/update"/>
+	<acme:form-submit test="${command == 'show'}"
+		code="administrator.announcement.form.button.delete"
+		action="/administrator/announcement/delete"/>
+	<acme:form-submit test="${command == 'delete'}"
+		code="administrator.announcement.form.button.delete"
+		action="/administrator/announcement/delete"/>		
 	<acme:form-submit test="${command == 'update'}"
 		code="administrator.announcement.form.button.update"
 		action="/administrator/announcement/update"/>		
