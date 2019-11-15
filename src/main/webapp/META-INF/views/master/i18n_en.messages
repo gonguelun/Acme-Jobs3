@@ -54,6 +54,8 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.investor-record = Investor records
+master.menu.administrator.company-record = Company records
+master.menu.administrator.company-record.create = Create company record
 
 # master.menu.provider ########################################################
 
