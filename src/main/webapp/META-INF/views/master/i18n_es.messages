@@ -42,7 +42,7 @@ master.menu.features.request = Peticiones
 master.menu.features.announcement = Anuncios
 master.menu.features.challenge = Desafíos
 master.menu.features.company-record = Registros de compañías
-master.menu.features.investor-record =  Registros de inversiones
+master.menu.features.investor-record =  Registro de inversiones
 master.menu.features.offer = Ofertas
 
 # master.menu.administrator ###################################################
@@ -53,6 +53,12 @@ master.menu.administrator.announcements = Anuncios
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard = Panel de Estadísticas
+master.menu.administrator.investor-record = Registro de inversiones
+master.menu.administrator.company-record = Registro de compañías
+master.menu.administrator.company-record.create = Crear un registro de compañía
+master.menu.administrator.non-commercial-banner = Estandartes no comerciales
+master.menu.administrator.commercial-banner = Estandartes comerciales
+master.menu.administrator.commercial-banner.create = Crear estandarte comercial
 
 # master.menu.provider ########################################################
 
