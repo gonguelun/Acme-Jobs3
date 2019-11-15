@@ -53,6 +53,7 @@ master.menu.administrator.announcements = Anuncios
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard = Panel de Estadísticas
+master.menu.administrator.announcements.create=Crear Anuncio
 
 # master.menu.provider ########################################################
 
