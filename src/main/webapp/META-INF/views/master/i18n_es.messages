@@ -60,6 +60,7 @@ master.menu.administrator.company-record.create = Crear un registro de compañí
 master.menu.administrator.non-commercial-banner = Estandartes no comerciales
 master.menu.administrator.commercial-banner = Estandartes comerciales
 master.menu.administrator.commercial-banner.create = Crear estandarte comercial
+master.menu.administrator.non-commercial-banner.create = Crear estandarte no comercial
 
 # master.menu.provider ########################################################
 
