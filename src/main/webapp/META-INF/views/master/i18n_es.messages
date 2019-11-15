@@ -53,6 +53,8 @@ master.menu.administrator.announcements = Anuncios
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard = Panel de Estadísticas
+master.menu.administrator.company-record = Registro de compañías
+master.menu.administrator.company-record.create = Crear un registro de compañía
 
 # master.menu.provider ########################################################
 
