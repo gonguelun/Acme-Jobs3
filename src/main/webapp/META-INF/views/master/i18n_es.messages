@@ -53,7 +53,9 @@ master.menu.administrator.announcements = Anuncios
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard = Panel de Estadísticas
-
+master.menu.administrator.non-commercial-banner = Estandartes no comerciales
+master.menu.administrator.commercial-banner = Estandartes comerciales
+master.menu.administrator.commercial-banner.create = Crear estandarte comercial
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
