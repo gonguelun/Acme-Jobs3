@@ -53,6 +53,7 @@ master.menu.administrator.announcements = Announcements
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.dashboard = Dashboard
+master.menu.administrator.investor-record = Investor records
 
 # master.menu.provider ########################################################
 
