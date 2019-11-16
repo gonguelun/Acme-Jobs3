@@ -55,6 +55,7 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard = Panel de Estadísticas
 master.menu.administrator.announcements.create= Crear Anuncio
 master.menu.administrator.investor-record = Registro de inversiones
+master.menu.administrator.investor-record.create = Crear un registro de inversión
 master.menu.administrator.company-record = Registro de compañías
 master.menu.administrator.company-record.create = Crear un registro de compañía
 master.menu.administrator.non-commercial-banner = Estandartes no comerciales
