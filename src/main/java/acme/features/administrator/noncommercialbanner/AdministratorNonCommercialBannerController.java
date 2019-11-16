@@ -25,11 +25,15 @@ public class AdministratorNonCommercialBannerController extends AbstractControll
 	@Autowired
 	private AdministratorNonCommercialBannerCreateService	createService;
 
+	@Autowired
+	private AdministratorNonCommercialBannerDeleteService	deleteService;
+
 
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}
 }
