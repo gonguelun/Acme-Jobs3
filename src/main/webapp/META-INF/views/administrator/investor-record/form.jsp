@@ -24,6 +24,10 @@
 	<acme:form-submit test="${command == 'show'}"
 		code="administrator.investor-record.form.button.delete"
 		action="/administrator/investor-record/delete"/>
+		
+	<acme:form-submit test="${command == 'show'}"
+		code="administrator.investor-record.form.button.update"
+		action="/administrator/investor-record/update"/>
 
 	<acme:form-submit test="${command == 'create'}"
 		code="administrator.investor-record.form.button.create"
@@ -32,6 +36,11 @@
 	<acme:form-submit test="${command == 'delete'}"
 		code="administrator.investor-record.form.button.delete"
 		action="/administrator/investor-record/delete"/>
+		
+	<acme:form-submit test="${command == 'update'}"
+		code="administrator.investor-record.form.button.update"
+		action="/administrator/investor-record/update"/>
+		
 	<acme:form-return code="administrator.investor-record.form.button.return"/>
 </acme:form>
 

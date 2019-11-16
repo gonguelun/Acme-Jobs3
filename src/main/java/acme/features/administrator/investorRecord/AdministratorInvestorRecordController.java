@@ -24,6 +24,9 @@ public class AdministratorInvestorRecordController extends AbstractController<Ad
 
 	@Autowired
 	private AdministratorInvestorRecordCreateService	createService;
+  
+  @Autowired
+	private AdministratorInvestorRecordUpdateService	updateService;
 
 	@Autowired
 	private AdministratorInvestorRecordDeleteService	deleteService;
@@ -35,5 +38,6 @@ public class AdministratorInvestorRecordController extends AbstractController<Ad
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 	}
 }
