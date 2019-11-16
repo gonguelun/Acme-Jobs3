@@ -16,4 +16,5 @@ administrator.non-commercial-banner.form.label.slogan = Slogan
 administrator.non-commercial-banner.form.label.targetUrl = Url de destino
 administrator.non-commercial-banner.form.label.jingle = "Jingle"
 
+administrator.non-commercial-banner.form.button.create=Crear
 administrator.non-commercial-banner.form.button.return = Volver

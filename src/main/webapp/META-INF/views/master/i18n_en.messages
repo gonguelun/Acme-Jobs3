@@ -61,6 +61,7 @@ master.menu.administrator.company-record.create = Create company record
 master.menu.administrator.non-commercial-banner = Non commercial banners
 master.menu.administrator.commercial-banner = Commercial banners
 master.menu.administrator.commercial-banner.create = Create commercial banner
+master.menu.administrator.non-commercial-banner.create = Create non commercial banner
 
 # master.menu.provider ########################################################
 
