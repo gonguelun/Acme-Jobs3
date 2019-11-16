@@ -28,6 +28,9 @@ public class AdministratorCommercialBannerController extends AbstractController<
 	@Autowired
 	private AdministratorCommercialBannerUpdateService	updateService;
 
+	@Autowired
+	private AdministratorCommercialBannerDeleteService	deleteService;
+
 
 	@PostConstruct
 	private void initialise() {
@@ -35,5 +38,6 @@ public class AdministratorCommercialBannerController extends AbstractController<
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}
 }
