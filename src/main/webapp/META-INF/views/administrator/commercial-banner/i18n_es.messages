@@ -19,3 +19,4 @@ administrator.commercial-banner.form.label.creditCard = Tarjeta de Crédito
 administrator.commercial-banner.form.button.return = Volver
 administrator.commercial-banner.form.button.create = Crear
 administrator.commercial-banner.form.button.update = Actualizar
+administrator.commercial-banner.form.button.delete = Eliminar
