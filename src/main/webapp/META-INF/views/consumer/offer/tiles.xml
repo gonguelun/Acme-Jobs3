@@ -18,8 +18,8 @@
 
 <tiles-definitions>
 
-	<definition name="authenticated/consumer/offer/form" extends="master">
-		<put-attribute name="body" type="template" value="../authenticated/consumer/offer/form.jsp" />
+	<definition name="consumer/offer/form" extends="master">
+		<put-attribute name="body" type="template" value="../consumer/offer/form.jsp" />
 	</definition>
 	
 </tiles-definitions>

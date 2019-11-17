@@ -9,15 +9,14 @@
 # they accept any liabilities with respect to them.
 
 authenticated.consumer.offer.form.label.title = Title:
-authenticated.consumer.offer.form.label.moment = Moment:
 authenticated.consumer.offer.form.label.deadline = Deadline:
 authenticated.consumer.offer.form.label.text = Text:
 authenticated.consumer.offer.form.label.minPrice = Minimun price:
 authenticated.consumer.offer.form.label.maxPrice = Maximun price:
 authenticated.consumer.offer.form.label.ticker = Ticker:
-authenticated.consumer.offer.form.label.checkbox = Confirmation:
+authenticated.consumer.offer.form.label.checkbox = Confirmation
 
 authenticated.consumer.offer.form.button.create = Create
 authenticated.consumer.offer.form.button.return = Return
 
-authenticated.consumer.offer.error.checkbox = You must confirmate the creation
+authenticated.consumer.offer.error.checkbox = You must confirm the creation

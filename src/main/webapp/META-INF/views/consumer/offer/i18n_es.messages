@@ -9,13 +9,12 @@
 # they accept any liabilities with respect to them.
 
 authenticated.consumer.offer.form.label.title = Título:
-authenticated.consumer.offer.form.label.moment = Momento:
 authenticated.consumer.offer.form.label.deadline = Fecha límite:
 authenticated.consumer.offer.form.label.text = Texto:
 authenticated.consumer.offer.form.label.minPrice = Precio mínimo:
 authenticated.consumer.offer.form.label.maxPrice = Precio máximo:
 authenticated.consumer.offer.form.label.ticker = Código bursátil:
-authenticated.consumer.offer.form.label.checkbox = Confirmación:
+authenticated.consumer.offer.form.label.checkbox = Confirmación
 
 authenticated.consumer.offer.form.button.create = Crear
 authenticated.consumer.offer.form.button.return = Volver

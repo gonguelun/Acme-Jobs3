@@ -17,18 +17,13 @@
 
 <acme:form>
 	<acme:form-textbox code="authenticated.consumer.offer.form.label.title" path="title"/>
-	
-	<jstl:if test="${command != 'create'}">
-	<acme:form-moment code="authenticated.consumer.offer.form.label.moment" path="moment" readonly="true"/>
-	</jstl:if>
-	
 	<acme:form-moment code="authenticated.consumer.offer.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="authenticated.consumer.offer.form.label.text" path="text"/>
 	<acme:form-money code="authenticated.consumer.offer.form.label.minPrice" path="minPrice"/>
 	<acme:form-money code="authenticated.consumer.offer.form.label.maxPrice" path="maxPrice"/>
-	<acme:form-textbox code="authenticated.consumer.offer.form.label.ticker" path="ticker"/>
+	<acme:form-textbox code="authenticated.consumer.offer.form.label.ticker" path="ticker" placeholder="OXXXX-99999"/>
 	<acme:form-checkbox code="authenticated.consumer.offer.form.label.checkbox" path="checkbox"/>
 
-	<acme:form-submit test="${command == 'create'}" code="authenticated.consumer.offer.form.button.create" action="/authenticated/consumer/offer/create"/>
+	<acme:form-submit code="authenticated.consumer.offer.form.button.create" action="/authenticated/consumer/offer/create"/>
 	<acme:form-return code="authenticated.consumer.offer.form.button.return"/>
 </acme:form>
