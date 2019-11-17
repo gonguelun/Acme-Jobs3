@@ -66,6 +66,7 @@ master.menu.administrator.commercial-banner.create = Create commercial banner
 
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
+master.menu.provider.features.request.create = Create request
 
 # master.menu.consumer ##########################################################
 

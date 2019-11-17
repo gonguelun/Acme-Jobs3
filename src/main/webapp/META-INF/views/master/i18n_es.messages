@@ -66,6 +66,7 @@ master.menu.administrator.commercial-banner.create = Crear estandarte comercial
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.features.request.create = Crear petición
 
 # master.menu.consumer ##########################################################
 

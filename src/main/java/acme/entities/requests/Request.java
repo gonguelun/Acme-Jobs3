@@ -34,11 +34,9 @@ public class Request extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
-	@NotNull
 	private Date				creationMoment;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@NotNull
 	private Date				deadLine;
 
 	@NotBlank
