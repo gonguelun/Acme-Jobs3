@@ -26,6 +26,9 @@ public class AdministratorNonCommercialBannerController extends AbstractControll
 	private AdministratorNonCommercialBannerCreateService	createService;
 
 	@Autowired
+	private AdministratorNonCommercialBannerUpdateService	updateService;
+
+	@Autowired
 	private AdministratorNonCommercialBannerDeleteService	deleteService;
 
 
@@ -34,6 +37,7 @@ public class AdministratorNonCommercialBannerController extends AbstractControll
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}
 }

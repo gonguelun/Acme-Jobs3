@@ -21,13 +21,22 @@
 	<acme:form-url code="administrator.non-commercial-banner.form.label.targetUrl" path="targetUrl" />
 	<acme:form-textarea code="administrator.non-commercial-banner.form.label.jingle" path="jingle" />
 	
+	
+	<acme:form-submit test="${command == 'show'}"
+		code="administrator.non-commercial-banner.form.button.update"
+		action="/administrator/non-commercial-banner/update"/>	
+		
 	<acme:form-submit test="${command == 'show'}"
 		code="administrator.non-commercial-banner.form.button.delete"
 		action="/administrator/non-commercial-banner/delete"/>
-	
+		
 	<acme:form-submit test="${command == 'create'}"
 		code="administrator.non-commercial-banner.form.button.create"
 		action="/administrator/non-commercial-banner/create"/>
+		
+	<acme:form-submit test="${command == 'update'}"
+		code="administrator.non-commercial-banner.form.button.update"
+		action="/administrator/non-commercial-banner/update"/>		
 		
 	<acme:form-submit test="${command == 'delete'}"
 		code="administrator.non-commercial-banner.form.button.delete"
