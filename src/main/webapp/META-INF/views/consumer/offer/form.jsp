@@ -16,14 +16,14 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="authenticated.consumer.offer.form.label.title" path="title"/>
-	<acme:form-moment code="authenticated.consumer.offer.form.label.deadline" path="deadline"/>
-	<acme:form-textarea code="authenticated.consumer.offer.form.label.text" path="text"/>
-	<acme:form-money code="authenticated.consumer.offer.form.label.minPrice" path="minPrice"/>
-	<acme:form-money code="authenticated.consumer.offer.form.label.maxPrice" path="maxPrice"/>
-	<acme:form-textbox code="authenticated.consumer.offer.form.label.ticker" path="ticker" placeholder="OXXXX-99999"/>
-	<acme:form-checkbox code="authenticated.consumer.offer.form.label.checkbox" path="checkbox"/>
+	<acme:form-textbox code="consumer.offer.form.label.title" path="title"/>
+	<acme:form-moment code="consumer.offer.form.label.deadline" path="deadline"/>
+	<acme:form-textarea code="consumer.offer.form.label.text" path="text"/>
+	<acme:form-money code="consumer.offer.form.label.minPrice" path="minPrice"/>
+	<acme:form-money code="consumer.offer.form.label.maxPrice" path="maxPrice"/>
+	<acme:form-textbox code="consumer.offer.form.label.ticker" path="ticker" placeholder="OXXXX-99999"/>
+	<acme:form-checkbox code="consumer.offer.form.label.checkbox" path="checkbox"/>
 
-	<acme:form-submit code="authenticated.consumer.offer.form.button.create" action="/authenticated/consumer/offer/create"/>
-	<acme:form-return code="authenticated.consumer.offer.form.button.return"/>
+	<acme:form-submit code="consumer.offer.form.button.create" action="/consumer/offer/create"/>
+	<acme:form-return code="consumer.offer.form.button.return"/>
 </acme:form>

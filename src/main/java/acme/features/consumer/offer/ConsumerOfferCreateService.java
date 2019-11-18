@@ -1,6 +1,7 @@
 
-package acme.features.authenticated.consumer.offer;
+package acme.features.consumer.offer;
 
+import java.util.Calendar;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +15,10 @@ import acme.framework.components.Request;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class AuthenticatedConsumerOfferCreateService implements AbstractCreateService<Consumer, Offer> {
+public class ConsumerOfferCreateService implements AbstractCreateService<Consumer, Offer> {
 
 	@Autowired
-	AuthenticatedConsumerOfferRepository repository;
+	ConsumerOfferRepository repository;
 
 
 	@Override
@@ -62,6 +63,42 @@ public class AuthenticatedConsumerOfferCreateService implements AbstractCreateSe
 
 		isAccepted = request.getModel().getBoolean("checkbox");
 		errors.state(request, isAccepted, "checkbox", "authenticated.consumer.offer.error.checkbox");
+
+		Date deadLineMoment;
+		Boolean isFutureDate;
+
+		deadLineMoment = request.getModel().getDate("deadline");
+
+		if (deadLineMoment != null) {
+			isFutureDate = deadLineMoment.after(Calendar.getInstance().getTime());
+			errors.state(request, isFutureDate, "deadline", "consumer.offer.error.must-be-future");
+		}
+
+		boolean isDuplicated;
+
+		isDuplicated = this.repository.findOneByTicker(entity.getTicker()) != null;
+		errors.state(request, !isDuplicated, "ticker", "consumer.offer.error.duplicated");
+
+		boolean isEuroMin;
+
+		if (entity.getMinPrice() != null) {
+			isEuroMin = entity.getMinPrice().getCurrency().equals("€") || entity.getMinPrice().getCurrency().equals("EUR");
+			errors.state(request, isEuroMin, "minPrice", "consumer.offer.error.must-be-euro");
+		}
+
+		boolean isEuroMax;
+
+		if (entity.getMaxPrice() != null) {
+			isEuroMax = entity.getMaxPrice().getCurrency().equals("€") || entity.getMaxPrice().getCurrency().equals("EUR");
+			errors.state(request, isEuroMax, "maxPrice", "consumer.offer.error.must-be-euro");
+		}
+
+		boolean isPriceInRange;
+
+		if (entity.getMinPrice() != null && entity.getMaxPrice() != null) {
+			isPriceInRange = entity.getMinPrice().getAmount() < entity.getMaxPrice().getAmount();
+			errors.state(request, isPriceInRange, "minPrice", "consumer.offer.error.must-be-in-range");
+		}
 
 	}
 

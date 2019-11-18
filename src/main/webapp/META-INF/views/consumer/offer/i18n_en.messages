@@ -8,15 +8,19 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.consumer.offer.form.label.title = Title:
-authenticated.consumer.offer.form.label.deadline = Deadline:
-authenticated.consumer.offer.form.label.text = Text:
-authenticated.consumer.offer.form.label.minPrice = Minimun price:
-authenticated.consumer.offer.form.label.maxPrice = Maximun price:
-authenticated.consumer.offer.form.label.ticker = Ticker:
-authenticated.consumer.offer.form.label.checkbox = Confirmation
+consumer.offer.form.label.title = Title:
+consumer.offer.form.label.deadline = Deadline:
+consumer.offer.form.label.text = Text:
+consumer.offer.form.label.minPrice = Minimun price:
+consumer.offer.form.label.maxPrice = Maximun price:
+consumer.offer.form.label.ticker = Ticker:
+consumer.offer.form.label.checkbox = Confirmation
 
-authenticated.consumer.offer.form.button.create = Create
-authenticated.consumer.offer.form.button.return = Return
+consumer.offer.form.button.create = Create
+consumer.offer.form.button.return = Return
 
-authenticated.consumer.offer.error.checkbox = You must confirm the creation
+consumer.offer.error.checkbox = You must confirm the creation
+consumer.offer.error.must-be-future = Deadline must be in future
+consumer.offer.error.duplicated = Ticker must be unique
+consumer.offer.error.must-be-euro = Price currency must be € or EUR (which represents the euro currency)
+consumer.offer.error.must-be-in-range = Price must be in a range value

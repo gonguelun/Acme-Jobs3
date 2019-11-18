@@ -8,15 +8,19 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.consumer.offer.form.label.title = Título:
-authenticated.consumer.offer.form.label.deadline = Fecha límite:
-authenticated.consumer.offer.form.label.text = Texto:
-authenticated.consumer.offer.form.label.minPrice = Precio mínimo:
-authenticated.consumer.offer.form.label.maxPrice = Precio máximo:
-authenticated.consumer.offer.form.label.ticker = Código bursátil:
-authenticated.consumer.offer.form.label.checkbox = Confirmación
+consumer.offer.form.label.title = Título:
+consumer.offer.form.label.deadline = Fecha límite:
+consumer.offer.form.label.text = Texto:
+consumer.offer.form.label.minPrice = Precio mínimo:
+consumer.offer.form.label.maxPrice = Precio máximo:
+consumer.offer.form.label.ticker = Código bursátil:
+consumer.offer.form.label.checkbox = Confirmación
 
-authenticated.consumer.offer.form.button.create = Crear
-authenticated.consumer.offer.form.button.return = Volver
+consumer.offer.form.button.create = Crear
+consumer.offer.form.button.return = Volver
 
-authenticated.consumer.offer.error.checkbox = Debes confirmar la creación
+consumer.offer.error.checkbox = Debes confirmar la creación
+consumer.offer.error.must-be-future = La fecha límite debe ser futura
+consumer.offer.error.duplicated = El ticker debe ser único
+consumer.offer.error.must-be-euro = La divisa debe ser € o EUR (que representa los euros)
+consumer.offer.error.must-be-in-range = El precio debe estar entre un rango

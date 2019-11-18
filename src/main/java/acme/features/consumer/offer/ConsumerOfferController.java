@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.consumer.offer;
+package acme.features.consumer.offer;
 
 import javax.annotation.PostConstruct;
 
@@ -13,11 +13,11 @@ import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 
 @Controller
-@RequestMapping("/authenticated/consumer/offer/")
-public class AuthenticatedConsumerOfferController extends AbstractController<Consumer, Offer> {
+@RequestMapping("/consumer/offer/")
+public class ConsumerOfferController extends AbstractController<Consumer, Offer> {
 
 	@Autowired
-	private AuthenticatedConsumerOfferCreateService createService;
+	private ConsumerOfferCreateService createService;
 
 
 	@PostConstruct
