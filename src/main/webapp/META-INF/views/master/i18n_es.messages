@@ -73,6 +73,7 @@ master.menu.provider.features.request.create = Crear petición
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
+master.menu.consumer.offers.create = Crear ofertas
 master.menu.consumer.favourite-link = Enlace favorito
 
 # master.menu.user-account ####################################################
@@ -119,4 +120,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
