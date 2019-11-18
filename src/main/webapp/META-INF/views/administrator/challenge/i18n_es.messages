@@ -17,8 +17,11 @@ administrator.challenge.form.label.rewardSilver=Recompensa para Plata
 administrator.challenge.form.label.goalBronze=Objetivo para Bronce
 administrator.challenge.form.label.rewardBronze=Recompensa para Bronce
 administrator.challenge.form.label.description=Descripcion
+
 administrator.challenge.form.button.create = Crear
+administrator.challenge.form.button.update = Actualizar
 administrator.challenge.form.button.delete = Borrar
+
 administrator.challenge.form.button.return=Volver
 
 administrator.challenge.list.label.title=Titulo

@@ -26,7 +26,7 @@
 	<acme:form-money code="administrator.challenge.form.label.rewardBronze" path="rewardBronze" />
 	<acme:form-moment code="administrator.challenge.form.label.deadline" path="deadline" />
 
-
+	<acme:form-submit test="${command == 'show'}" code="administrator.challenge.form.button.update" action="/administrator/challenge/update"/>
 
 	<acme:form-submit test="${command == 'show'}" code="administrator.challenge.form.button.delete"
 		action="/administrator/challenge/delete" />
@@ -34,6 +34,8 @@
 	<acme:form-submit test="${command == 'create'}" code="administrator.challenge.form.button.create"
 		action="/administrator/challenge/create" />
 
+  <acme:form-submit test="${command == 'update'}" code="administrator.challenge.form.button.update" action="/administrator/challenge/update"/>
+  
 	<acme:form-submit test="${command == 'delete'}" code="administrator.challenge.form.button.delete"
 		action="/administrator/challenge/delete" />
 
