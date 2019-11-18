@@ -33,9 +33,21 @@
 	
 	
 	<acme:form-submit test="${command == 'create'}" 
-		code="administrator.company-record.form-button.create" 
+		code="administrator.company-record.form.button.create" 
 		action="/administrator/company-record/create"/>
 
+	<acme:form-submit test="${command == 'show'}"
+		code="administrator.company-record.form.button.update" 
+		action="/administrator/company-record/update"/>
+	<acme:form-submit test="${command == 'update'}"
+		code="administrator.company-record.form.button.update" 
+		action="/administrator/company-record/update"/>
+	<acme:form-submit test="${command == 'show'}"
+		code="administrator.company-record.form.button.delete" 
+		action="/administrator/company-record/delete"/>
+	<acme:form-submit test="${command == 'delete'}"
+		code="administrator.company-record.form.button.delete" 
+		action="/administrator/company-record/delete"/>
 		
   	<acme:form-return code="administrator.company-record.form.button.return"/>
 </acme:form>
