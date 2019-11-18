@@ -163,9 +163,19 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
+create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
+create index IDX9pkce3d1y6w47wadap5s5xptc on `company_record` (`stars`);
+create index IDXk2t3uthe649ao1jllcuks0gv4 on `investor_record` (`stars`);
+create index IDXq2o9psuqfuqmq59f0sq57x9uf on `offer` (`deadline`);
+create index IDXgkl90l0ts8y43idn6dfrvek92 on `offer` (`min_price_amount`);
+create index IDXbpkiy0wn8aympprr3vtfmkfi on `offer` (`max_price_amount`);
 
     alter table `offer` 
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
+create index IDX9ita8hqkxsxlcd2hsrtgslqm0 on `request` (`dead_line`);
+create index IDXh9syauj4iixf18uts83saik5d on `request` (`ticker`);
+create index IDXby0pqf12tfiy25u5ckjdjg9lo on `request` (`reward_amount`);
 
     alter table `request` 
        add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
