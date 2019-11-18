@@ -63,50 +63,22 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert entity != null;
 		assert errors != null;
 
-		boolean isPositiveGold = true, isEuroGold;
+		boolean isEuroGold, isEuroSilver, isEuroBronze;
 
-		String[] aGold = request.getModel().getString("rewardGold").trim().split("EUR");
-		String[] bGold = request.getModel().getString("rewardGold").trim().split("€");
-
-		isEuroGold = aGold.length == 1 && bGold.length == 1 && (request.getModel().getString("rewardGold").contains("€") || request.getModel().getString("rewardGold").contains("EUR"));
-		errors.state(request, isEuroGold, "rewardGold", "administrator.challenge.error.must-be-euro");
-
-		if (!errors.hasErrors("rewardGold") && request.getModel().getString("rewardGold").contains("€")) {
-			isPositiveGold = Double.parseDouble(request.getModel().getString("rewardGold").replace("€", "")) >= 0;
-		} else if (!errors.hasErrors("rewardGold") && request.getModel().getString("rewardGold").contains("EUR")) {
-			isPositiveGold = Double.parseDouble(request.getModel().getString("rewardGold").replace("EUR", "")) >= 0;
+		if (entity.getRewardGold() != null) {
+			isEuroGold = entity.getRewardGold().getCurrency().equals("€") || entity.getRewardGold().getCurrency().equals("EUR");
+			errors.state(request, isEuroGold, "rewardGold", "administrator.challenge.error.must-be-euro");
 		}
-		errors.state(request, isPositiveGold, "rewardGold", "administrator.challenge.error.must-be-positive");
 
-		boolean isPositiveSilver = true, isEuroSilver;
-
-		String[] aSilver = request.getModel().getString("rewardSilver").trim().split("EUR");
-		String[] bSilver = request.getModel().getString("rewardSilver").trim().split("€");
-
-		isEuroSilver = aSilver.length == 1 && bSilver.length == 1 && (request.getModel().getString("rewardSilver").contains("€") || request.getModel().getString("rewardSilver").contains("EUR"));
-		errors.state(request, isEuroSilver, "rewardSilver", "administrator.challenge.error.must-be-euro");
-
-		if (!errors.hasErrors("rewardSilver") && request.getModel().getString("rewardSilver").contains("€")) {
-			isPositiveSilver = Double.parseDouble(request.getModel().getString("rewardSilver").replace("€", "")) >= 0;
-		} else if (!errors.hasErrors("rewardSilver") && request.getModel().getString("rewardSilver").contains("EUR")) {
-			isPositiveSilver = Double.parseDouble(request.getModel().getString("rewardSilver").replace("EUR", "")) >= 0;
+		if (entity.getRewardSilver() != null) {
+			isEuroSilver = entity.getRewardSilver().getCurrency().equals("€") || entity.getRewardSilver().getCurrency().equals("EUR");
+			errors.state(request, isEuroSilver, "rewardSilver", "administrator.challenge.error.must-be-euro");
 		}
-		errors.state(request, isPositiveSilver, "rewardSilver", "administrator.challenge.error.must-be-positive");
 
-		boolean isPositiveBronze = true, isEuroBronze;
-
-		String[] aBronze = request.getModel().getString("rewardBronze").trim().split("EUR");
-		String[] bBronze = request.getModel().getString("rewardBronze").trim().split("€");
-
-		isEuroBronze = aBronze.length == 1 && bBronze.length == 1 && (request.getModel().getString("rewardBronze").contains("€") || request.getModel().getString("rewardBronze").contains("EUR"));
-		errors.state(request, isEuroBronze, "rewardBronze", "administrator.challenge.error.must-be-euro");
-
-		if (!errors.hasErrors("rewardBronze") && request.getModel().getString("rewardBronze").contains("€")) {
-			isPositiveBronze = Double.parseDouble(request.getModel().getString("rewardBronze").replace("€", "")) >= 0;
-		} else if (!errors.hasErrors("rewardBronze") && request.getModel().getString("rewardBronze").contains("EUR")) {
-			isPositiveBronze = Double.parseDouble(request.getModel().getString("rewardBronze").replace("EUR", "")) >= 0;
+		if (entity.getRewardBronze() != null) {
+			isEuroBronze = entity.getRewardBronze().getCurrency().equals("€") || entity.getRewardBronze().getCurrency().equals("EUR");
+			errors.state(request, isEuroBronze, "rewardBronze", "administrator.challenge.error.must-be-euro");
 		}
-		errors.state(request, isPositiveBronze, "rewardBronze", "administrator.challenge.error.must-be-positive");
 
 		Date deadLineMoment;
 		Boolean isFutureDate;

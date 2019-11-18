@@ -24,6 +24,5 @@ administrator.challenge.form.button.return=Return
 administrator.challenge.list.label.title=Title
 administrator.challenge.list.label.deadline=Deadline
 
-administrator.challenge.error.must-be-positive = Reward must be a positive amount
 administrator.challenge.error.must-be-euro = Reward currency must be € or EUR (which represents the euro currency)
 administrator.challenge.error.must-be-future = Deadline must be a future date
