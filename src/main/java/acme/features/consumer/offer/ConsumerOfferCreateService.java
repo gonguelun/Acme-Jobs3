@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import acme.entities.offers.Offer;
 import acme.entities.roles.Consumer;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.services.AbstractCreateService;
@@ -45,6 +46,11 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 
 		request.unbind(entity, model, "title", "deadline", "text", "minPrice", "maxPrice", "ticker");
 
+		if (request.isMethod(HttpMethod.GET)) {
+			model.setAttribute("checkbox", "false");
+		} else {
+			request.transfer(model, "checkbox");
+		}
 	}
 
 	@Override
