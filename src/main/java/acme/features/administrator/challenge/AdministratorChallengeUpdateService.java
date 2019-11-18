@@ -1,6 +1,9 @@
 
 package acme.features.administrator.challenge;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -62,17 +65,32 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert entity != null;
 		assert errors != null;
 
-		/*
-		 * Calendar calendar;
-		 * Date minimumDateline;
-		 *
-		 * if (!errors.hasErrors("deadline")) {
-		 * calendar = new GregorianCalendar();
-		 * minimumDateline = calendar.getTime();
-		 * errors.state(request, entity.getDeadline().after(minimumDateline), "deadline", "administrator.challenge.form.label.deadline");
-		 * }
-		 */
+		boolean isEuroGold, isEuroSilver, isEuroBronze;
 
+		if (entity.getRewardGold() != null) {
+			isEuroGold = entity.getRewardGold().getCurrency().equals("€") || entity.getRewardGold().getCurrency().equals("EUR");
+			errors.state(request, isEuroGold, "rewardGold", "administrator.challenge.error.must-be-euro");
+		}
+
+		if (entity.getRewardSilver() != null) {
+			isEuroSilver = entity.getRewardSilver().getCurrency().equals("€") || entity.getRewardSilver().getCurrency().equals("EUR");
+			errors.state(request, isEuroSilver, "rewardSilver", "administrator.challenge.error.must-be-euro");
+		}
+
+		if (entity.getRewardBronze() != null) {
+			isEuroBronze = entity.getRewardBronze().getCurrency().equals("€") || entity.getRewardBronze().getCurrency().equals("EUR");
+			errors.state(request, isEuroBronze, "rewardBronze", "administrator.challenge.error.must-be-euro");
+		}
+
+		Date deadLineMoment;
+		Boolean isFutureDate;
+
+		deadLineMoment = request.getModel().getDate("deadline");
+
+		if (deadLineMoment != null) {
+			isFutureDate = deadLineMoment.after(Calendar.getInstance().getTime());
+			errors.state(request, isFutureDate, "deadline", "administrator.challenge.error.must-be-future");
+		}
 	}
 
 	@Override

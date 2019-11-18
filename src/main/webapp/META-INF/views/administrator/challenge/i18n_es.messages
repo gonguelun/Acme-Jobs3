@@ -22,3 +22,6 @@ administrator.challenge.form.button.return=Volver
 
 administrator.challenge.list.label.title=Titulo
 administrator.challenge.list.label.deadline=Fecha Límite
+
+administrator.challenge.error.must-be-euro = La divisa debe ser € o EUR (que representa los euros)
+administrator.challenge.error.must-be-future = La fecha límite debe ser futura
