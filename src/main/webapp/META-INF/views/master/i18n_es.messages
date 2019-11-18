@@ -68,6 +68,7 @@ master.menu.administrator.non-commercial-banner.create = Crear estandarte no com
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.features.request.create = Crear petición
 
 # master.menu.consumer ##########################################################
 
