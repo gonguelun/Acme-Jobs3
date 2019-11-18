@@ -20,7 +20,7 @@
 
 	<bean id="announcement02" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample Announcement 02" />
-		<property name="moment" value="2019/10/10 15:30" />
+		<property name="moment" value="2019/10/25 15:30" />
 		<property name="moreInfo" value="http://www.google.es" />
 		<property name="text" value="Description of announcement 2" />
 	</bean>
@@ -265,5 +265,33 @@
 		<property name="spamThreshold" value="0.01" />
 		<property name="spamWords" value="Sex,Sexo,HardCore,Duro,Viagra,Cialis,Nigeria,You've won,Has ganado,Million dollar,Millón de dólares"/>
 		
+	</bean>
+	
+	<bean id="commercialbanner01" class="acme.entities.banners.CommercialBanner">
+		<property name="pictureUrl" value="http://ejemploimagen.com" />
+		<property name="slogan" value="work hard" />
+		<property name="targetUrl" value="http://anotherexample.com" />
+		<property name="creditCard" value="4534661982419844" />
+	</bean>
+	
+	<bean id="commercialbanner02" class="acme.entities.banners.CommercialBanner">
+		<property name="pictureUrl" value="http://ejemploimagen2.com" />
+		<property name="slogan" value="work hard 2" />
+		<property name="targetUrl" value="http://anotherexample2.com" />
+		<property name="creditCard" value="4074941877766152" />
+	</bean>
+	
+	<bean id="noncommercialbanner01" class="acme.entities.banners.NonCommercialBanner">
+		<property name="pictureUrl" value="http://ejemploimagen3.com" />
+		<property name="slogan" value="work hard 2" />
+		<property name="targetUrl" value="http://anotherexample3.com" />
+		<property name="jingle" value="jajajaj" />
+	</bean>
+	
+	<bean id="noncommercialbanner02" class="acme.entities.banners.NonCommercialBanner">
+		<property name="pictureUrl" value="http://ejemploimagen3.com" />
+		<property name="slogan" value="work hard 2" />
+		<property name="targetUrl" value="http://anotherexample3.com" />
+		<property name="jingle"><null /></property>
 	</bean>
 </beans>

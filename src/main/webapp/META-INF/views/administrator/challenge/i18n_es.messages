@@ -10,14 +10,18 @@
 
 administrator.challenge.form.label.title=Titulo
 administrator.challenge.form.label.deadline=Fecha Límite
-administrator.challenge.form.label.goalGold=Objetivo
-administrator.challenge.form.label.rewardGold=Recompensa
-administrator.challenge.form.label.goalSilver=Objetivo
-administrator.challenge.form.label.rewardSilver=Recompensa
-administrator.challenge.form.label.goalBronze=Objetivo
-administrator.challenge.form.label.rewardBronze=Recompensa
+administrator.challenge.form.label.goalGold=Objetivo para Oro
+administrator.challenge.form.label.rewardGold=Recompensa para Oro
+administrator.challenge.form.label.goalSilver=Objetivo para Plata
+administrator.challenge.form.label.rewardSilver=Recompensa para Plata
+administrator.challenge.form.label.goalBronze=Objetivo para Bronce
+administrator.challenge.form.label.rewardBronze=Recompensa para Bronce
 administrator.challenge.form.label.description=Descripcion
-administrator.challenge.form.button.update= Actualizar
+
+administrator.challenge.form.button.create = Crear
+administrator.challenge.form.button.update = Actualizar
+administrator.challenge.form.button.delete = Borrar
+
 administrator.challenge.form.button.return=Volver
 
 administrator.challenge.list.label.title=Titulo
