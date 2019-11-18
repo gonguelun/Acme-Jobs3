@@ -24,8 +24,7 @@
 	
 	<acme:form-checkbox code="authenticated.provider.request.form.label.confirmed" path="checkbox"/>
 	
-	<acme:form-submit test="${command == 'create'}"
-		code="authenticated.provider.request.form.button.create"
+	<acme:form-submit code="authenticated.provider.request.form.button.create"
 		action="/provider/request/create"/>
 			
   	<acme:form-return code="authenticated.provider.request.form.button.return"/>

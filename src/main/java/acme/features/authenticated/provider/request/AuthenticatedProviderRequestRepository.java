@@ -18,4 +18,6 @@ public interface AuthenticatedProviderRequestRepository extends AbstractReposito
 	@Query("select r from Request r where r.deadLine>=sysdate()")
 	Collection<Request> findManyAll();
 
+	@Query("select r from Request r where r.ticker = ?1")
+	Request findOneByTicker(String ticker);
 }

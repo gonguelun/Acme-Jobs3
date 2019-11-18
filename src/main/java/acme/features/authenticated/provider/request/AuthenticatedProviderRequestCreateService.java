@@ -1,6 +1,7 @@
 
 package acme.features.authenticated.provider.request;
 
+import java.util.Calendar;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 import acme.entities.requests.Request;
 import acme.entities.roles.Provider;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.services.AbstractCreateService;
 
@@ -43,6 +45,12 @@ public class AuthenticatedProviderRequestCreateService implements AbstractCreate
 
 		request.unbind(entity, model, "title", "deadLine", "text", "reward", "ticker");
 
+		if (request.isMethod(HttpMethod.GET)) {
+			model.setAttribute("checkbox", "false");
+		} else {
+			request.transfer(model, "checkbox");
+		}
+
 	}
 
 	@Override
@@ -57,11 +65,29 @@ public class AuthenticatedProviderRequestCreateService implements AbstractCreate
 
 	@Override
 	public void validate(final acme.framework.components.Request<Request> request, final Request entity, final Errors errors) {
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
 
-		boolean isConfirmed;
+		boolean isConfirmed, isDuplicated, isFutureDate, isEuro;
+		Date deadLineMoment;
+
+		isDuplicated = this.repository.findOneByTicker(entity.getTicker()) != null;
+		errors.state(request, !isDuplicated, "ticker", "authenticated.provider.request.error.duplicated");
+
+		deadLineMoment = request.getModel().getDate("deadLine");
+		if (deadLineMoment != null) {
+			isFutureDate = deadLineMoment.after(Calendar.getInstance().getTime());
+			errors.state(request, isFutureDate, "deadLine", "authenticated.provider.request.error.isFutureDate");
+		}
 
 		isConfirmed = request.getModel().getBoolean("checkbox");
 		errors.state(request, isConfirmed, "checkbox", "authenticated.provider.request.error.must-confirmed");
+
+		if (entity.getReward() != null) {
+			isEuro = entity.getReward().getCurrency().equals("€") || entity.getReward().getCurrency().equals("EUR");
+			errors.state(request, isEuro, "reward", "authenticated.provider.request.error.must-be-euro");
+		}
 	}
 
 	@Override

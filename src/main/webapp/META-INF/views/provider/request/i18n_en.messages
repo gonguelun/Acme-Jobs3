@@ -17,4 +17,7 @@ authenticated.provider.request.form.label.confirmed = Confirm
 authenticated.provider.request.form.button.create = Create
 authenticated.provider.request.form.button.return = Return
 
+authenticated.provider.request.error.duplicated = Ticker must be unique
+authenticated.provider.request.error.isFutureDate = Deadline must be a future date
 authenticated.provider.request.error.must-confirmed = Submit must be confirmed
+authenticated.provider.request.error.must-be-euro = Reward currency must be € or EUR (which represents the euro currency)

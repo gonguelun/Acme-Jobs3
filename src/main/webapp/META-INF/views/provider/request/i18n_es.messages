@@ -17,5 +17,7 @@ authenticated.provider.request.form.label.confirmed = Confirmar
 authenticated.provider.request.form.button.create = Crear
 authenticated.provider.request.form.button.return = Volver
 
+authenticated.provider.request.error.duplicated = El ticker debe ser único
+authenticated.provider.request.error.isFutureDate = La fecha límite debe ser futura
 authenticated.provider.request.error.must-confirmed = Debe confirmar el envío
-
+authenticated.provider.request.error.must-be-euro = La divisa debe ser € o EUR (que representa los euros)
