@@ -10,3 +10,8 @@
 
 administrator.configuration.list.label.spamWords=Spam Words
 administrator.configuration.list.label.spamThreshold=Spam Threshold
+
+administrator.configuration.form.label.spamWords=Spam Words
+administrator.configuration.form.label.spamThreshold=Spam Threshold
+administrator.configuration.form.button.update=Update
+administrator.configuration.form.button.return=Return
