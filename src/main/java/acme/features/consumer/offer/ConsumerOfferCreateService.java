@@ -68,7 +68,7 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 		boolean isAccepted;
 
 		isAccepted = request.getModel().getBoolean("checkbox");
-		errors.state(request, isAccepted, "checkbox", "authenticated.consumer.offer.error.checkbox");
+		errors.state(request, isAccepted, "checkbox", "consumer.offer.error.checkbox");
 
 		Date deadLineMoment;
 		Boolean isFutureDate;
