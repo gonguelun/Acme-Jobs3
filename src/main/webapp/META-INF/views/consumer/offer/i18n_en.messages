@@ -23,4 +23,4 @@ consumer.offer.error.checkbox = You must confirm the creation
 consumer.offer.error.must-be-future = Deadline must be in future
 consumer.offer.error.duplicated = Ticker must be unique
 consumer.offer.error.must-be-euro = Price currency must be € or EUR (which represents the euro currency)
-consumer.offer.error.must-be-in-range = Price must be in a range value
+consumer.offer.error.must-be-in-range = Min price must be lower than max price
